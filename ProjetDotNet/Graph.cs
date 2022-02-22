@@ -22,6 +22,7 @@ namespace ProjetDotNet
         private double[] charbon;
         private double[] bioenergies;
         private double[] fioul;
+        private int period = 300;
         private Random rand = new Random(0);
         /*
          * Génère une liste aléatoire 
@@ -51,7 +52,7 @@ namespace ProjetDotNet
                 {
                     var line = reader.ReadLine();
                     var values = line.Split(';');
-                    if (!first && values[4] != "" && i < 200)
+                    if (!first && values[4] != "")//&& i < 100
                     {
                         values[0] = i.ToString();
                         listA.Add(values);
@@ -86,9 +87,9 @@ namespace ProjetDotNet
             double[] ys1 = new double[listA.Count];
             for (int i = 0; i < listA.Count; i++)
             {
-                xs[i] = Double.Parse(listA[i][0]);
+                /*xs[i] = Double.Parse(listA[i][0]);
                 xsStr[i] = listA[i][2];
-                ys1[i] = Double.Parse(listA[i][4]);
+                ys1[i] = Double.Parse(listA[i][4]);*/
 
                 nucleaire[i] = Double.Parse(listA[i][10]);
                 hydraulique[i] = Double.Parse(listA[i][13]);
@@ -99,7 +100,34 @@ namespace ProjetDotNet
                 bioenergies[i] = Double.Parse(listA[i][15]);
                 fioul[i] = Double.Parse(listA[i][7]);
             }
-            int pointCount = listA.Count;
+            
+            for (int i = listA.Count-1; i >= 0; i--)
+            {
+                if (i >= period)
+                {
+                    for(int j = 1; j < period; j++)
+                    {
+                        nucleaire[i] += nucleaire[i - j];
+                        hydraulique[i] += hydraulique[i - j];
+                        eolien[i] += eolien[i - j];
+                        gaz[i] += gaz[i - j];
+                        solaire[i] += solaire[i - j];
+                        charbon[i] += charbon[i - j];
+                        bioenergies[i] += bioenergies[i - j];
+                        fioul[i] += fioul[i - j];
+                    }
+                    nucleaire[i] = nucleaire[i] / period;
+                    hydraulique[i] = hydraulique[i] / period;
+                    eolien[i] = eolien[i] / period;
+                    gaz[i] = gaz[i] / period;
+                    solaire[i] = solaire[i] / period;
+                    charbon[i] = charbon[i] / period;
+                    bioenergies[i] = bioenergies[i] / period;
+                    fioul[i] = fioul[i] / period;
+                }
+            }
+
+            //int pointCount = listA.Count;
 
             CreateGraph3(zedGraphControl3);
             CreateGraph1(zedGraphControl1);
@@ -200,6 +228,7 @@ namespace ProjetDotNet
             myPane.XAxis.Title.Text = "Temps";
             myPane.YAxis.Title.Text = "Production en MW";
             myPane.XAxis.Scale.Max = nucleaire.Length;
+            myPane.XAxis.Scale.Min = period;
 
             // Make up some data arrays based on the Sine function
             double x;
