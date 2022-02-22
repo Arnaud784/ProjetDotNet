@@ -38,7 +38,7 @@ namespace ProjetDotNet
             // 
             // zedGraphControl1
             // 
-            this.zedGraphControl1.Location = new System.Drawing.Point(13, 13);
+            this.zedGraphControl1.Location = new System.Drawing.Point(1, 13);
             this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
@@ -48,13 +48,13 @@ namespace ProjetDotNet
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(501, 641);
+            this.zedGraphControl1.Size = new System.Drawing.Size(360, 641);
             this.zedGraphControl1.TabIndex = 0;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
             // zedGraphControl2
             // 
-            this.zedGraphControl2.Location = new System.Drawing.Point(522, 13);
+            this.zedGraphControl2.Location = new System.Drawing.Point(381, 13);
             this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl2.Name = "zedGraphControl2";
             this.zedGraphControl2.ScrollGrace = 0D;
@@ -64,13 +64,13 @@ namespace ProjetDotNet
             this.zedGraphControl2.ScrollMinX = 0D;
             this.zedGraphControl2.ScrollMinY = 0D;
             this.zedGraphControl2.ScrollMinY2 = 0D;
-            this.zedGraphControl2.Size = new System.Drawing.Size(544, 641);
+            this.zedGraphControl2.Size = new System.Drawing.Size(158, 641);
             this.zedGraphControl2.TabIndex = 1;
             this.zedGraphControl2.UseExtendedPrintDialog = true;
             // 
             // zedGraphControl3
             // 
-            this.zedGraphControl3.Location = new System.Drawing.Point(1074, 13);
+            this.zedGraphControl3.Location = new System.Drawing.Point(547, 13);
             this.zedGraphControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl3.Name = "zedGraphControl3";
             this.zedGraphControl3.ScrollGrace = 0D;
@@ -80,7 +80,7 @@ namespace ProjetDotNet
             this.zedGraphControl3.ScrollMinX = 0D;
             this.zedGraphControl3.ScrollMinY = 0D;
             this.zedGraphControl3.ScrollMinY2 = 0D;
-            this.zedGraphControl3.Size = new System.Drawing.Size(538, 641);
+            this.zedGraphControl3.Size = new System.Drawing.Size(1065, 641);
             this.zedGraphControl3.TabIndex = 2;
             this.zedGraphControl3.UseExtendedPrintDialog = true;
             // 
