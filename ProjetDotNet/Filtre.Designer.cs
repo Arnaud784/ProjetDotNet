@@ -38,6 +38,8 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -62,7 +64,6 @@
             this.zedGraphControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.zedGraphControl3.AutoSize = true;
             this.zedGraphControl3.Location = new System.Drawing.Point(577, 13);
             this.zedGraphControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl3.Name = "zedGraphControl3";
@@ -116,7 +117,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(671, 714);
+            this.dateTimePicker1.Location = new System.Drawing.Point(612, 714);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(230, 22);
             this.dateTimePicker1.TabIndex = 9;
@@ -124,7 +125,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(928, 714);
+            this.dateTimePicker2.Location = new System.Drawing.Point(869, 714);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(227, 22);
             this.dateTimePicker2.TabIndex = 10;
@@ -139,7 +140,7 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.Font = new System.Drawing.Font("Sylfaen", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button3.Location = new System.Drawing.Point(856, 770);
+            this.button3.Location = new System.Drawing.Point(797, 770);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 54);
             this.button3.TabIndex = 11;
@@ -148,13 +149,22 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(907, 719);
+            this.label1.Location = new System.Drawing.Point(3, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(15, 16);
             this.label1.TabIndex = 12;
             this.label1.Text = "à";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(848, 715);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(23, 21);
+            this.panel1.TabIndex = 13;
             // 
             // Filtre
             // 
@@ -162,7 +172,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(1640, 836);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
@@ -176,8 +186,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Project Green";
             this.TopMost = true;
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -191,5 +202,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
