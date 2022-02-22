@@ -199,9 +199,10 @@ namespace ProjetDotNet
             myPane.Title.Text = "La production d'électricité par filière";
             myPane.XAxis.Title.Text = "Temps";
             myPane.YAxis.Title.Text = "Production en MW";
+            myPane.XAxis.Scale.Max = nucleaire.Length;
 
             // Make up some data arrays based on the Sine function
-            double x, y1;
+            double x;
             PointPairList list1 = new PointPairList();
             PointPairList list2 = new PointPairList();
             PointPairList list3 = new PointPairList();

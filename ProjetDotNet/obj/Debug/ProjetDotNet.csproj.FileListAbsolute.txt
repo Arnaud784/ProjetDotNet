@@ -83,3 +83,4 @@ C:\Users\cathe\Documents\Master2\Csharp\Repo\ProjetDotNet\ProjetDotNet\obj\Debug
 C:\Users\cathe\Documents\Master2\Csharp\Repo\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.pdb
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Graph.resources
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Menu.resources
+C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Filtre.resources
