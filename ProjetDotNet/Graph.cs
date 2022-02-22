@@ -139,7 +139,7 @@ namespace ProjetDotNet
             GraphPane myPane = zgc.GraphPane;
 
             // Set the Titles
-            myPane.Title.Text = "La production d'électricité par filière";
+            myPane.Title.Text = "La production d'électricité en France par filière en 2021";
             myPane.XAxis.Title.Text = "Filières";
             myPane.YAxis.Title.Text = "Production en %";
 
@@ -224,7 +224,7 @@ namespace ProjetDotNet
             GraphPane myPane = zgc.GraphPane;
 
             // Set the Titles
-            myPane.Title.Text = "La production d'électricité par filière";
+            myPane.Title.Text = "La production d'électricité en France par filière en 2021";
             myPane.XAxis.Title.Text = "Temps";
             myPane.YAxis.Title.Text = "Production en MW";
             myPane.XAxis.Scale.Max = nucleaire.Length;
@@ -339,13 +339,13 @@ namespace ProjetDotNet
                 Color.FromArgb(255, 255, 210), -45F);
 
             // Add a caption and an arrow
-            TextObj myText = new TextObj("Interesting\nPoint", 230F, 70F);
+            /*TextObj myText = new TextObj("Interesting\nPoint", 230F, 70F);
             myText.FontSpec.FontColor = Color.Red;
             myText.Location.AlignH = AlignH.Center;
             myText.Location.AlignV = AlignV.Top;
             myPane.GraphObjList.Add(myText);
             ArrowObj myArrow = new ArrowObj(Color.Red, 12F, 230F, 70F, 280F, 55F);
-            myPane.GraphObjList.Add(myArrow);
+            myPane.GraphObjList.Add(myArrow);*/
         }
 
             private void button1_Click(object sender, EventArgs e)
