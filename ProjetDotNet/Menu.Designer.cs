@@ -106,6 +106,7 @@
             this.MinimumSize = new System.Drawing.Size(986, 657);
             this.Name = "Menu";
             this.Text = "Project Green";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
