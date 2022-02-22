@@ -17,7 +17,6 @@ C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\bin\Debug\tr\ZedGraph.reso
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\bin\Debug\zh-cn\ZedGraph.resources.dll
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\bin\Debug\zh-tw\ZedGraph.resources.dll
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.csproj.AssemblyReference.cache
-C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Form1.resources
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Properties.Resources.resources
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.csproj.GenerateResource.cache
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.csproj.CoreCompileInputs.cache
@@ -52,3 +51,5 @@ C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDot
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.pdb
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Menu.resources
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Graph.resources
+C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Graph.resources
+C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Menu.resources

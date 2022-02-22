@@ -32,9 +32,9 @@ namespace ProjetDotNet
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Graph));
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
-            this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl3 = new ZedGraph.ZedGraphControl();
             this.button1 = new System.Windows.Forms.Button();
+            this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
             this.SuspendLayout();
             // 
             // zedGraphControl1
@@ -49,29 +49,13 @@ namespace ProjetDotNet
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(360, 641);
+            this.zedGraphControl1.Size = new System.Drawing.Size(922, 641);
             this.zedGraphControl1.TabIndex = 0;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
-            // zedGraphControl2
-            // 
-            this.zedGraphControl2.Location = new System.Drawing.Point(381, 13);
-            this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.zedGraphControl2.Name = "zedGraphControl2";
-            this.zedGraphControl2.ScrollGrace = 0D;
-            this.zedGraphControl2.ScrollMaxX = 0D;
-            this.zedGraphControl2.ScrollMaxY = 0D;
-            this.zedGraphControl2.ScrollMaxY2 = 0D;
-            this.zedGraphControl2.ScrollMinX = 0D;
-            this.zedGraphControl2.ScrollMinY = 0D;
-            this.zedGraphControl2.ScrollMinY2 = 0D;
-            this.zedGraphControl2.Size = new System.Drawing.Size(158, 641);
-            this.zedGraphControl2.TabIndex = 1;
-            this.zedGraphControl2.UseExtendedPrintDialog = true;
-            // 
             // zedGraphControl3
             // 
-            this.zedGraphControl3.Location = new System.Drawing.Point(547, 13);
+            this.zedGraphControl3.Location = new System.Drawing.Point(931, 13);
             this.zedGraphControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl3.Name = "zedGraphControl3";
             this.zedGraphControl3.ScrollGrace = 0D;
@@ -81,7 +65,7 @@ namespace ProjetDotNet
             this.zedGraphControl3.ScrollMinX = 0D;
             this.zedGraphControl3.ScrollMinY = 0D;
             this.zedGraphControl3.ScrollMinY2 = 0D;
-            this.zedGraphControl3.Size = new System.Drawing.Size(1065, 641);
+            this.zedGraphControl3.Size = new System.Drawing.Size(980, 641);
             this.zedGraphControl3.TabIndex = 2;
             this.zedGraphControl3.UseExtendedPrintDialog = true;
             // 
@@ -103,15 +87,31 @@ namespace ProjetDotNet
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // zedGraphControl2
+            // 
+            this.zedGraphControl2.Location = new System.Drawing.Point(744, 662);
+            this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zedGraphControl2.Name = "zedGraphControl2";
+            this.zedGraphControl2.ScrollGrace = 0D;
+            this.zedGraphControl2.ScrollMaxX = 0D;
+            this.zedGraphControl2.ScrollMaxY = 0D;
+            this.zedGraphControl2.ScrollMaxY2 = 0D;
+            this.zedGraphControl2.ScrollMinX = 0D;
+            this.zedGraphControl2.ScrollMinY = 0D;
+            this.zedGraphControl2.ScrollMinY2 = 0D;
+            this.zedGraphControl2.Size = new System.Drawing.Size(200, 185);
+            this.zedGraphControl2.TabIndex = 4;
+            this.zedGraphControl2.UseExtendedPrintDialog = true;
+            // 
             // Graph
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(1640, 836);
+            this.ClientSize = new System.Drawing.Size(1924, 836);
+            this.Controls.Add(this.zedGraphControl2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.zedGraphControl3);
-            this.Controls.Add(this.zedGraphControl2);
             this.Controls.Add(this.zedGraphControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1658, 883);
@@ -126,9 +126,9 @@ namespace ProjetDotNet
         #endregion
 
         private ZedGraph.ZedGraphControl zedGraphControl1;
-        private ZedGraph.ZedGraphControl zedGraphControl2;
         private ZedGraph.ZedGraphControl zedGraphControl3;
         private System.Windows.Forms.Button button1;
+        private ZedGraph.ZedGraphControl zedGraphControl2;
     }
 }
 
