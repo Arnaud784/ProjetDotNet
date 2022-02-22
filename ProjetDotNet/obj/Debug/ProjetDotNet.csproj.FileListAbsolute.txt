@@ -51,7 +51,6 @@ C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDot
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.pdb
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Menu.resources
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Graph.resources
-<<<<<<< HEAD
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Filtre.resources
 C:\Users\cathe\Documents\Master2\Csharp\Repo\ProjetDotNet\ProjetDotNet\bin\Debug\ProjetDotNet.exe.config
 C:\Users\cathe\Documents\Master2\Csharp\Repo\ProjetDotNet\ProjetDotNet\bin\Debug\ProjetDotNet.exe
@@ -82,7 +81,5 @@ C:\Users\cathe\Documents\Master2\Csharp\Repo\ProjetDotNet\ProjetDotNet\obj\Debug
 C:\Users\cathe\Documents\Master2\Csharp\Repo\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.csproj.CopyComplete
 C:\Users\cathe\Documents\Master2\Csharp\Repo\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.exe
 C:\Users\cathe\Documents\Master2\Csharp\Repo\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.pdb
-=======
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Graph.resources
 C:\Users\arnau\source\repos\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Menu.resources
->>>>>>> origin/features/linkDatas
