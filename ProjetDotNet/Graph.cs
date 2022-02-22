@@ -12,7 +12,7 @@ using ZedGraph;
 
 namespace ProjetDotNet
 {
-    public partial class Form1 : Form
+    public partial class Graph : Form
     {
         private Random rand = new Random(0);
         /*
@@ -27,6 +27,7 @@ namespace ProjetDotNet
                 values[i] = values[i - 1] + (rand.NextDouble() - .5) * mult;
             return values;
         }
+<<<<<<< HEAD:ProjetDotNet/Form1.cs
         /*
          * Lis un fichier csv du nom donnée
          */
@@ -56,6 +57,9 @@ namespace ProjetDotNet
             }
         }
         public Form1()
+=======
+        public Graph()
+>>>>>>> origin/main:ProjetDotNet/Graph.cs
         {
             InitializeComponent();
             /*plotBar();
@@ -202,6 +206,7 @@ namespace ProjetDotNet
             zedGraphControl3.Refresh();
         }
 
+<<<<<<< HEAD:ProjetDotNet/Form1.cs
         private void CreateGraph(ZedGraphControl zgc)
         {
             // get a reference to the GraphPane
@@ -281,6 +286,11 @@ namespace ProjetDotNet
             // Tell ZedGraph to refigure the
             // axes since the data have changed
             zgc.AxisChange();
+=======
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+>>>>>>> origin/main:ProjetDotNet/Graph.cs
         }
     }
 }
