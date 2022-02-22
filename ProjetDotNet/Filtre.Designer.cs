@@ -74,7 +74,7 @@
             this.zedGraphControl3.ScrollMinX = 0D;
             this.zedGraphControl3.ScrollMinY = 0D;
             this.zedGraphControl3.ScrollMinY2 = 0D;
-            this.zedGraphControl3.Size = new System.Drawing.Size(1050, 641);
+            this.zedGraphControl3.Size = new System.Drawing.Size(950, 641);
             this.zedGraphControl3.TabIndex = 6;
             this.zedGraphControl3.UseExtendedPrintDialog = true;
             // 
@@ -117,7 +117,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(612, 714);
+            this.dateTimePicker1.Location = new System.Drawing.Point(654, 714);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(230, 22);
             this.dateTimePicker1.TabIndex = 9;
@@ -125,7 +125,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(869, 714);
+            this.dateTimePicker2.Location = new System.Drawing.Point(911, 714);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(227, 22);
             this.dateTimePicker2.TabIndex = 10;
@@ -140,7 +140,7 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.Font = new System.Drawing.Font("Sylfaen", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button3.Location = new System.Drawing.Point(797, 770);
+            this.button3.Location = new System.Drawing.Point(839, 770);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 54);
             this.button3.TabIndex = 11;
@@ -161,7 +161,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(848, 715);
+            this.panel1.Location = new System.Drawing.Point(890, 715);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(23, 21);
             this.panel1.TabIndex = 13;
@@ -171,7 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(1640, 836);
+            this.ClientSize = new System.Drawing.Size(1682, 836);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.dateTimePicker2);
@@ -181,7 +181,7 @@
             this.Controls.Add(this.zedGraphControl3);
             this.Controls.Add(this.zedGraphControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1658, 883);
+            this.MinimumSize = new System.Drawing.Size(1700, 883);
             this.Name = "Filtre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Project Green";

@@ -39,7 +39,7 @@ namespace ProjetDotNet
             // 
             // zedGraphControl1
             // 
-            this.zedGraphControl1.Location = new System.Drawing.Point(1, 13);
+            this.zedGraphControl1.Location = new System.Drawing.Point(13, 13);
             this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
@@ -71,6 +71,8 @@ namespace ProjetDotNet
             // 
             // zedGraphControl3
             // 
+            this.zedGraphControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.zedGraphControl3.Location = new System.Drawing.Point(547, 13);
             this.zedGraphControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl3.Name = "zedGraphControl3";
@@ -81,7 +83,7 @@ namespace ProjetDotNet
             this.zedGraphControl3.ScrollMinX = 0D;
             this.zedGraphControl3.ScrollMinY = 0D;
             this.zedGraphControl3.ScrollMinY2 = 0D;
-            this.zedGraphControl3.Size = new System.Drawing.Size(1065, 641);
+            this.zedGraphControl3.Size = new System.Drawing.Size(980, 641);
             this.zedGraphControl3.TabIndex = 2;
             this.zedGraphControl3.UseExtendedPrintDialog = true;
             // 
@@ -108,13 +110,13 @@ namespace ProjetDotNet
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(1640, 836);
+            this.ClientSize = new System.Drawing.Size(1682, 836);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.zedGraphControl3);
             this.Controls.Add(this.zedGraphControl2);
             this.Controls.Add(this.zedGraphControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1658, 883);
+            this.MinimumSize = new System.Drawing.Size(1700, 883);
             this.Name = "Graph";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Project Green";
