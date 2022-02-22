@@ -116,31 +116,31 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(654, 714);
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(585, 712);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(230, 22);
             this.dateTimePicker1.TabIndex = 9;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(911, 714);
+            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(853, 712);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(227, 22);
             this.dateTimePicker2.TabIndex = 10;
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button3.Font = new System.Drawing.Font("Sylfaen", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Sylfaen", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button3.Location = new System.Drawing.Point(839, 770);
+            this.button3.Location = new System.Drawing.Point(770, 768);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(114, 54);
             this.button3.TabIndex = 11;
@@ -151,19 +151,20 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 5);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, -5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 16);
+            this.label1.Size = new System.Drawing.Size(26, 29);
             this.label1.TabIndex = 12;
             this.label1.Text = "à";
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(890, 715);
+            this.panel1.Location = new System.Drawing.Point(821, 712);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(23, 21);
+            this.panel1.Size = new System.Drawing.Size(26, 22);
             this.panel1.TabIndex = 13;
             // 
             // Filtre
