@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjetDotNet
 {
-    public partial class Menu : Form
+    public partial class Filtre : Form
     {
-        public Menu()
+        public Filtre()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Graph graph = new Graph();
-            graph.ShowDialog();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            Filtre filtre = new Filtre();
-            filtre.ShowDialog();
+            this.Close();
         }
     }
 }

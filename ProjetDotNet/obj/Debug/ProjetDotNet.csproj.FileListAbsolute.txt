@@ -52,3 +52,4 @@ C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDot
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.pdb
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Menu.resources
 C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Graph.resources
+C:\Users\Glady\OneDrive\Bureau\GIT\ProjetDotNet\ProjetDotNet\obj\Debug\ProjetDotNet.Filtre.resources
