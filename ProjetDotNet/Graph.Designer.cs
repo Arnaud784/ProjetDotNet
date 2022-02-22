@@ -34,7 +34,6 @@ namespace ProjetDotNet
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl3 = new ZedGraph.ZedGraphControl();
             this.button1 = new System.Windows.Forms.Button();
-            this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
             this.SuspendLayout();
             // 
             // zedGraphControl1
@@ -87,29 +86,12 @@ namespace ProjetDotNet
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // zedGraphControl2
-            // 
-            this.zedGraphControl2.Location = new System.Drawing.Point(744, 662);
-            this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.zedGraphControl2.Name = "zedGraphControl2";
-            this.zedGraphControl2.ScrollGrace = 0D;
-            this.zedGraphControl2.ScrollMaxX = 0D;
-            this.zedGraphControl2.ScrollMaxY = 0D;
-            this.zedGraphControl2.ScrollMaxY2 = 0D;
-            this.zedGraphControl2.ScrollMinX = 0D;
-            this.zedGraphControl2.ScrollMinY = 0D;
-            this.zedGraphControl2.ScrollMinY2 = 0D;
-            this.zedGraphControl2.Size = new System.Drawing.Size(200, 185);
-            this.zedGraphControl2.TabIndex = 4;
-            this.zedGraphControl2.UseExtendedPrintDialog = true;
-            // 
             // Graph
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(1924, 836);
-            this.Controls.Add(this.zedGraphControl2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.zedGraphControl3);
             this.Controls.Add(this.zedGraphControl1);
@@ -128,7 +110,6 @@ namespace ProjetDotNet
         private ZedGraph.ZedGraphControl zedGraphControl1;
         private ZedGraph.ZedGraphControl zedGraphControl3;
         private System.Windows.Forms.Button button1;
-        private ZedGraph.ZedGraphControl zedGraphControl2;
     }
 }
 

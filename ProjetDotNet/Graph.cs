@@ -113,7 +113,7 @@ namespace ProjetDotNet
             // Set the Titles
             myPane.Title.Text = "La production d'électricité par filière";
             myPane.XAxis.Title.Text = "Filières";
-            myPane.YAxis.Title.Text = "Production en MW";
+            myPane.YAxis.Title.Text = "Production en %";
 
             //Grid
             myPane.XAxis.MajorGrid.IsVisible = true;
