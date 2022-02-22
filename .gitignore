@@ -396,3 +396,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.vs/ProjetDotNet/v16/.suo
+ProjetDotNet/bin/Debug/ProjetDotNet.pdb
+ProjetDotNet/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+ProjetDotNet/obj/Debug/ProjetDotNet.csproj.AssemblyReference.cache
+ProjetDotNet/obj/Debug/ProjetDotNet.csproj.CoreCompileInputs.cache
+ProjetDotNet/obj/Debug/ProjetDotNet.csproj.FileListAbsolute.txt
+ProjetDotNet/obj/Debug/ProjetDotNet.csproj.GenerateResource.cache
+ProjetDotNet/obj/Debug/ProjetDotNet.pdb
