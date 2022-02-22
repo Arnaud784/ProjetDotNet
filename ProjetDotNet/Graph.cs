@@ -27,7 +27,7 @@ namespace ProjetDotNet
                 values[i] = values[i - 1] + (rand.NextDouble() - .5) * mult;
             return values;
         }
-<<<<<<< HEAD:ProjetDotNet/Form1.cs
+
         /*
          * Lis un fichier csv du nom donnée
          */
@@ -56,10 +56,7 @@ namespace ProjetDotNet
                 return listA;
             }
         }
-        public Form1()
-=======
         public Graph()
->>>>>>> origin/main:ProjetDotNet/Graph.cs
         {
             InitializeComponent();
             /*plotBar();
@@ -206,7 +203,6 @@ namespace ProjetDotNet
             zedGraphControl3.Refresh();
         }
 
-<<<<<<< HEAD:ProjetDotNet/Form1.cs
         private void CreateGraph(ZedGraphControl zgc)
         {
             // get a reference to the GraphPane
@@ -234,7 +230,7 @@ namespace ProjetDotNet
             // Make up some random data points
             //string[] labels = { "Fioul", "Charbon", "Gaz", "Nucléaire", "Eolien", "Solaire", "Hydraulique", "Bioénergies" };
             string[] labels = { "" };
-           // double[] a = { 1, 2, 8, 61, 10, 4, 12, 2 };
+            // double[] a = { 1, 2, 8, 61, 10, 4, 12, 2 };
             double[] y = { 61 };
             double[] y2 = { 12 };
             double[] y3 = { 10 };
@@ -286,11 +282,11 @@ namespace ProjetDotNet
             // Tell ZedGraph to refigure the
             // axes since the data have changed
             zgc.AxisChange();
-=======
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
->>>>>>> origin/main:ProjetDotNet/Graph.cs
         }
     }
 }

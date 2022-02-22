@@ -39,13 +39,7 @@ namespace ProjetDotNet
             // 
             // zedGraphControl1
             // 
-<<<<<<< HEAD:ProjetDotNet/Form1.Designer.cs
             this.zedGraphControl1.Location = new System.Drawing.Point(1, 13);
-=======
-            this.zedGraphControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.zedGraphControl1.Location = new System.Drawing.Point(13, 13);
->>>>>>> origin/main:ProjetDotNet/Graph.Designer.cs
             this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
@@ -61,12 +55,7 @@ namespace ProjetDotNet
             // 
             // zedGraphControl2
             // 
-<<<<<<< HEAD:ProjetDotNet/Form1.Designer.cs
             this.zedGraphControl2.Location = new System.Drawing.Point(381, 13);
-=======
-            this.zedGraphControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.zedGraphControl2.Location = new System.Drawing.Point(522, 13);
->>>>>>> origin/main:ProjetDotNet/Graph.Designer.cs
             this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl2.Name = "zedGraphControl2";
             this.zedGraphControl2.ScrollGrace = 0D;
@@ -82,13 +71,7 @@ namespace ProjetDotNet
             // 
             // zedGraphControl3
             // 
-<<<<<<< HEAD:ProjetDotNet/Form1.Designer.cs
             this.zedGraphControl3.Location = new System.Drawing.Point(547, 13);
-=======
-            this.zedGraphControl3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.zedGraphControl3.Location = new System.Drawing.Point(1074, 13);
->>>>>>> origin/main:ProjetDotNet/Graph.Designer.cs
             this.zedGraphControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.zedGraphControl3.Name = "zedGraphControl3";
             this.zedGraphControl3.ScrollGrace = 0D;
