@@ -35,19 +35,6 @@ namespace ProjetDotNet
         List<string[]> listA;
 
         private int period = 300;
-        private Random rand = new Random(0);
-        /*
-         * Génère une liste aléatoire 
-         */
-        private double[] RandomWalk(int points = 5, double start = 100, double mult = 50)
-        {
-            // return an array of difting random numbers
-            double[] values = new double[points];
-            values[0] = start;
-            for (int i = 1; i < points; i++)
-                values[i] = values[i - 1] + (rand.NextDouble() - .5) * mult;
-            return values;
-        }
 
         /*
          * Lis un fichier csv du nom donnée
@@ -58,7 +45,6 @@ namespace ProjetDotNet
             {
                 Boolean first = true;
                 List<string[]> listA = new List<string[]>();
-                List<string> listB = new List<string>();
                 int i = 0;
                 while (!reader.EndOfStream)
                 {
@@ -69,7 +55,6 @@ namespace ProjetDotNet
                         values[0] = i.ToString();
                         listA.Add(values);
                         i++;
-                        //listB.Add(values[1]);
                     } else {
                         first = false;
                     }
@@ -80,14 +65,9 @@ namespace ProjetDotNet
         public Graph()
         {
             InitializeComponent();
-            /*plotBar();
-            plotScatter();
-            plotLines();*/
             listA = readCSV("bdd.csv");
 
             prepareDatas(listA);
-
-            //int pointCount = listA.Count;
 
             CreateGraph3(zedGraphControl3);
             CreateGraph1(zedGraphControl1);

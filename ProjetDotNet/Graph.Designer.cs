@@ -106,7 +106,7 @@ namespace ProjetDotNet
             this.checkBox_fioul.Checked = true;
             this.checkBox_fioul.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_fioul.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_fioul.Location = new System.Drawing.Point(724, 769);
+            this.checkBox_fioul.Location = new System.Drawing.Point(724, 747);
             this.checkBox_fioul.Name = "checkBox_fioul";
             this.checkBox_fioul.Size = new System.Drawing.Size(67, 24);
             this.checkBox_fioul.TabIndex = 19;
@@ -121,7 +121,7 @@ namespace ProjetDotNet
             this.checkBox_bio.Checked = true;
             this.checkBox_bio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_bio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_bio.Location = new System.Drawing.Point(582, 769);
+            this.checkBox_bio.Location = new System.Drawing.Point(582, 747);
             this.checkBox_bio.Name = "checkBox_bio";
             this.checkBox_bio.Size = new System.Drawing.Size(120, 24);
             this.checkBox_bio.TabIndex = 18;
@@ -136,7 +136,7 @@ namespace ProjetDotNet
             this.checkBox_sol.Checked = true;
             this.checkBox_sol.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_sol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_sol.Location = new System.Drawing.Point(724, 730);
+            this.checkBox_sol.Location = new System.Drawing.Point(724, 708);
             this.checkBox_sol.Name = "checkBox_sol";
             this.checkBox_sol.Size = new System.Drawing.Size(83, 24);
             this.checkBox_sol.TabIndex = 17;
@@ -151,7 +151,7 @@ namespace ProjetDotNet
             this.checkBox_charbon.Checked = true;
             this.checkBox_charbon.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_charbon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_charbon.Location = new System.Drawing.Point(872, 730);
+            this.checkBox_charbon.Location = new System.Drawing.Point(872, 708);
             this.checkBox_charbon.Name = "checkBox_charbon";
             this.checkBox_charbon.Size = new System.Drawing.Size(94, 24);
             this.checkBox_charbon.TabIndex = 16;
@@ -166,7 +166,7 @@ namespace ProjetDotNet
             this.checkBox_gaz.Checked = true;
             this.checkBox_gaz.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_gaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_gaz.Location = new System.Drawing.Point(582, 730);
+            this.checkBox_gaz.Location = new System.Drawing.Point(582, 708);
             this.checkBox_gaz.Name = "checkBox_gaz";
             this.checkBox_gaz.Size = new System.Drawing.Size(62, 24);
             this.checkBox_gaz.TabIndex = 15;
@@ -181,7 +181,7 @@ namespace ProjetDotNet
             this.checkBox_eol.Checked = true;
             this.checkBox_eol.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_eol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_eol.Location = new System.Drawing.Point(872, 693);
+            this.checkBox_eol.Location = new System.Drawing.Point(872, 671);
             this.checkBox_eol.Name = "checkBox_eol";
             this.checkBox_eol.Size = new System.Drawing.Size(77, 24);
             this.checkBox_eol.TabIndex = 14;
@@ -196,7 +196,7 @@ namespace ProjetDotNet
             this.checkBox_hydra.Checked = true;
             this.checkBox_hydra.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_hydra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_hydra.Location = new System.Drawing.Point(724, 693);
+            this.checkBox_hydra.Location = new System.Drawing.Point(724, 671);
             this.checkBox_hydra.Name = "checkBox_hydra";
             this.checkBox_hydra.Size = new System.Drawing.Size(120, 24);
             this.checkBox_hydra.TabIndex = 13;
@@ -211,7 +211,7 @@ namespace ProjetDotNet
             this.checkBox_nuc.Checked = true;
             this.checkBox_nuc.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_nuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_nuc.Location = new System.Drawing.Point(582, 693);
+            this.checkBox_nuc.Location = new System.Drawing.Point(582, 671);
             this.checkBox_nuc.Name = "checkBox_nuc";
             this.checkBox_nuc.Size = new System.Drawing.Size(102, 24);
             this.checkBox_nuc.TabIndex = 12;
@@ -221,8 +221,8 @@ namespace ProjetDotNet
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(1118, 768);
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(581, 790);
             this.dateTimePicker1.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -233,8 +233,8 @@ namespace ProjetDotNet
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(1421, 760);
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button2.Location = new System.Drawing.Point(872, 782);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 42);
             this.button2.TabIndex = 21;
@@ -249,7 +249,7 @@ namespace ProjetDotNet
             this.checkBox_all.Checked = true;
             this.checkBox_all.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_all.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_all.Location = new System.Drawing.Point(872, 769);
+            this.checkBox_all.Location = new System.Drawing.Point(872, 747);
             this.checkBox_all.Name = "checkBox_all";
             this.checkBox_all.Size = new System.Drawing.Size(50, 24);
             this.checkBox_all.TabIndex = 20;
