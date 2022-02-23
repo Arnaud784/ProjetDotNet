@@ -83,6 +83,16 @@ namespace ProjetDotNet
             plotLines();*/
             List<string[]> listA = readCSV("bdd.csv");
 
+            prepareDatas(listA);
+
+            //int pointCount = listA.Count;
+
+            CreateGraph3(zedGraphControl3);
+            CreateGraph1(zedGraphControl1);
+        }
+
+        private void prepareDatas(List<string[]> listA)
+        {
             nucleaire = new double[listA.Count];
             hydraulique = new double[listA.Count];
             eolien = new double[listA.Count];
@@ -92,9 +102,6 @@ namespace ProjetDotNet
             bioenergies = new double[listA.Count];
             fioul = new double[listA.Count];
 
-            double[] xs = new double[listA.Count];
-            string[] xsStr = new string[listA.Count];
-            double[] ys1 = new double[listA.Count];
             for (int i = 0; i < listA.Count; i++)
             {
                 nucleaire[i] = Double.Parse(listA[i][10]);
@@ -114,7 +121,7 @@ namespace ProjetDotNet
             mCharbon = 0;
             mBioenergies = 0;
             mFioul = 0;
-            for (int i = listA.Count-1; i >= 0; i--)
+            for (int i = listA.Count - 1; i >= 0; i--)
             {
                 mNucleaire += nucleaire[i];
                 mHydraulique += hydraulique[i];
@@ -137,7 +144,7 @@ namespace ProjetDotNet
                         charbon[i] += charbon[i - j];
                         bioenergies[i] += bioenergies[i - j];
                         fioul[i] += fioul[i - j];
-    }
+                    }
                     nucleaire[i] = nucleaire[i] / period;
                     hydraulique[i] = hydraulique[i] / period;
                     eolien[i] = eolien[i] / period;
@@ -146,7 +153,8 @@ namespace ProjetDotNet
                     charbon[i] = charbon[i] / period;
                     bioenergies[i] = bioenergies[i] / period;
                     fioul[i] = fioul[i] / period;
-                } else
+                }
+                else
                 {
                     nucleaire[i] = nucleaire[period];
                     hydraulique[i] = hydraulique[period];
@@ -167,11 +175,6 @@ namespace ProjetDotNet
             mBioenergies /= listA.Count;
             mFioul /= listA.Count;
             mTotal = mNucleaire + mHydraulique + mEolien + mGaz + mSolaire + mCharbon + mBioenergies + mFioul;
-
-            //int pointCount = listA.Count;
-
-            CreateGraph3(zedGraphControl3);
-            CreateGraph1(zedGraphControl1);
         }
 
         private void CreateGraph3(ZedGraphControl zgc)
@@ -226,6 +229,39 @@ namespace ProjetDotNet
             BarItem myBar7 = myPane.AddBar("Bioénergies", null, y7, Color.Green);
             BarItem myBar8 = myPane.AddBar("Fioul", null, y8, Color.Purple);
             //myBar.Bar.Fill = new Fill(Color.Red, Color.White, Color.Red);
+
+            if (!checkBox_nuc.Checked)
+            {
+                myBar.IsVisible = false;
+            }
+            if (!checkBox_hydra.Checked)
+            {
+                myBar2.IsVisible = false;
+            }
+            if (!checkBox_eol.Checked)
+            {
+                myBar3.IsVisible = false;
+            }
+            if (!checkBox_gaz.Checked)
+            {
+                myBar4.IsVisible = false;
+            }
+            if (!checkBox_sol.Checked)
+            {
+                myBar5.IsVisible = false;
+            }
+            if (!checkBox_charbon.Checked)
+            {
+                myBar6.IsVisible = false;
+            }
+            if (!checkBox_bio.Checked)
+            {
+                myBar7.IsVisible = false;
+            }
+            if (!checkBox_fioul.Checked)
+            {
+                myBar8.IsVisible = false;
+            }
 
             // Fix up the curve attributes a little
             /*myCurve.Symbol.Size = 8.0F;
@@ -286,22 +322,47 @@ namespace ProjetDotNet
                 x = (double)i;
                 //y1 = 1.5 + Math.Sin((double)i * 0.2);
                 //y2 = 3.0 * (1.5 + Math.Sin((double)i * 0.2));
-                double somme = nucleaire[i];
-                list1.Add(x, somme);
-                somme += hydraulique[i];
-                list2.Add(x, somme);
-                somme += eolien[i];
-                list3.Add(x, somme);
-                somme += gaz[i];
-                list4.Add(x, somme);
-                somme += solaire[i];
-                list5.Add(x, somme);
-                somme += charbon[i];
-                list6.Add(x, somme);
-                somme += bioenergies[i];
-                list7.Add(x, somme);
-                somme += fioul[i];
-                list8.Add(x, somme);
+                double somme = 0;
+                if (checkBox_nuc.Checked)
+                {
+                    somme += nucleaire[i];
+                    list1.Add(x, somme);
+                }
+                if (checkBox_hydra.Checked)
+                {
+                    somme += hydraulique[i];
+                    list2.Add(x, somme);
+                }
+                if (checkBox_eol.Checked)
+                {
+                    somme += eolien[i];
+                    list3.Add(x, somme);
+                }
+                if (checkBox_gaz.Checked)
+                {
+                    somme += gaz[i];
+                    list4.Add(x, somme);
+                }
+                if (checkBox_sol.Checked)
+                {
+                    somme += solaire[i];
+                    list5.Add(x, somme);
+                }
+                if (checkBox_charbon.Checked)
+                {
+                    somme += charbon[i];
+                    list6.Add(x, somme);
+                }
+                if (checkBox_bio.Checked)
+                {
+                    somme += bioenergies[i];
+                    list7.Add(x, somme);
+                }
+                if (checkBox_fioul.Checked)
+                {
+                    somme += fioul[i];
+                    list8.Add(x, somme);
+                }
             }
 
             // Generate a red curve with diamond
@@ -375,6 +436,40 @@ namespace ProjetDotNet
             myCurve7.Symbol.IsVisible = false;
             myCurve8.Symbol.IsVisible = false;
 
+            if (!checkBox_nuc.Checked)
+            {
+                myCurve.IsVisible = false;
+            }
+            if (!checkBox_hydra.Checked)
+            {
+                myCurve2.IsVisible = false;
+            }
+            if (!checkBox_eol.Checked)
+            {
+                myCurve3.IsVisible = false;
+            }
+            if (!checkBox_gaz.Checked)
+            {
+                myCurve4.IsVisible = false;
+            }
+            if (!checkBox_sol.Checked)
+            {
+                myCurve5.IsVisible = false;
+            }
+            if (!checkBox_charbon.Checked)
+            {
+                myCurve6.IsVisible = false;
+            }
+            if (!checkBox_bio.Checked)
+            {
+                myCurve7.IsVisible = false;
+            }
+            if (!checkBox_fioul.Checked)
+            {
+                myCurve8.IsVisible = false;
+            }
+
+
             // Add a background gradient fill to the axis frame
             myPane.Chart.Fill = new Fill(Color.White,
                 Color.FromArgb(255, 255, 210), -45F);
@@ -392,6 +487,18 @@ namespace ProjetDotNet
             private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void checkboxChange(object sender, EventArgs e)
+        {
+            zedGraphControl3.GraphPane.CurveList.Clear();
+            zedGraphControl3.GraphPane.GraphObjList.Clear();
+            zedGraphControl1.GraphPane.CurveList.Clear();
+            zedGraphControl1.GraphPane.GraphObjList.Clear();
+            CreateGraph3(zedGraphControl3);
+            CreateGraph1(zedGraphControl1);
+            zedGraphControl3.Refresh();
+            zedGraphControl1.Refresh();
         }
     }
 }

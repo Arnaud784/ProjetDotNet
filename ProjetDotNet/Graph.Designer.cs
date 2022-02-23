@@ -99,6 +99,8 @@ namespace ProjetDotNet
             // checkBox_fioul
             // 
             this.checkBox_fioul.AutoSize = true;
+            this.checkBox_fioul.Checked = true;
+            this.checkBox_fioul.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_fioul.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_fioul.Location = new System.Drawing.Point(319, 762);
             this.checkBox_fioul.Name = "checkBox_fioul";
@@ -106,10 +108,13 @@ namespace ProjetDotNet
             this.checkBox_fioul.TabIndex = 19;
             this.checkBox_fioul.Text = "Fioul";
             this.checkBox_fioul.UseVisualStyleBackColor = true;
+            this.checkBox_fioul.Click += new System.EventHandler(this.checkboxChange);
             // 
             // checkBox_bio
             // 
             this.checkBox_bio.AutoSize = true;
+            this.checkBox_bio.Checked = true;
+            this.checkBox_bio.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_bio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_bio.Location = new System.Drawing.Point(177, 762);
             this.checkBox_bio.Name = "checkBox_bio";
@@ -117,10 +122,13 @@ namespace ProjetDotNet
             this.checkBox_bio.TabIndex = 18;
             this.checkBox_bio.Text = "Bioenergies";
             this.checkBox_bio.UseVisualStyleBackColor = true;
+            this.checkBox_bio.Click += new System.EventHandler(this.checkboxChange);
             // 
             // checkBox_sol
             // 
             this.checkBox_sol.AutoSize = true;
+            this.checkBox_sol.Checked = true;
+            this.checkBox_sol.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_sol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_sol.Location = new System.Drawing.Point(319, 723);
             this.checkBox_sol.Name = "checkBox_sol";
@@ -128,10 +136,13 @@ namespace ProjetDotNet
             this.checkBox_sol.TabIndex = 17;
             this.checkBox_sol.Text = "Solaire";
             this.checkBox_sol.UseVisualStyleBackColor = true;
+            this.checkBox_sol.Click += new System.EventHandler(this.checkboxChange);
             // 
             // checkBox_charbon
             // 
             this.checkBox_charbon.AutoSize = true;
+            this.checkBox_charbon.Checked = true;
+            this.checkBox_charbon.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_charbon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_charbon.Location = new System.Drawing.Point(467, 723);
             this.checkBox_charbon.Name = "checkBox_charbon";
@@ -139,10 +150,13 @@ namespace ProjetDotNet
             this.checkBox_charbon.TabIndex = 16;
             this.checkBox_charbon.Text = "Charbon";
             this.checkBox_charbon.UseVisualStyleBackColor = true;
+            this.checkBox_charbon.Click += new System.EventHandler(this.checkboxChange);
             // 
             // checkBox_gaz
             // 
             this.checkBox_gaz.AutoSize = true;
+            this.checkBox_gaz.Checked = true;
+            this.checkBox_gaz.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_gaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_gaz.Location = new System.Drawing.Point(177, 723);
             this.checkBox_gaz.Name = "checkBox_gaz";
@@ -150,10 +164,13 @@ namespace ProjetDotNet
             this.checkBox_gaz.TabIndex = 15;
             this.checkBox_gaz.Text = "Gaz";
             this.checkBox_gaz.UseVisualStyleBackColor = true;
+            this.checkBox_gaz.Click += new System.EventHandler(this.checkboxChange);
             // 
             // checkBox_eol
             // 
             this.checkBox_eol.AutoSize = true;
+            this.checkBox_eol.Checked = true;
+            this.checkBox_eol.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_eol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_eol.Location = new System.Drawing.Point(467, 686);
             this.checkBox_eol.Name = "checkBox_eol";
@@ -161,10 +178,13 @@ namespace ProjetDotNet
             this.checkBox_eol.TabIndex = 14;
             this.checkBox_eol.Text = "Eolien";
             this.checkBox_eol.UseVisualStyleBackColor = true;
+            this.checkBox_eol.Click += new System.EventHandler(this.checkboxChange);
             // 
             // checkBox_hydra
             // 
             this.checkBox_hydra.AutoSize = true;
+            this.checkBox_hydra.Checked = true;
+            this.checkBox_hydra.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_hydra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_hydra.Location = new System.Drawing.Point(319, 686);
             this.checkBox_hydra.Name = "checkBox_hydra";
@@ -172,10 +192,13 @@ namespace ProjetDotNet
             this.checkBox_hydra.TabIndex = 13;
             this.checkBox_hydra.Text = "Hydraulique";
             this.checkBox_hydra.UseVisualStyleBackColor = true;
+            this.checkBox_hydra.Click += new System.EventHandler(this.checkboxChange);
             // 
             // checkBox_nuc
             // 
             this.checkBox_nuc.AutoSize = true;
+            this.checkBox_nuc.Checked = true;
+            this.checkBox_nuc.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_nuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_nuc.Location = new System.Drawing.Point(177, 686);
             this.checkBox_nuc.Name = "checkBox_nuc";
@@ -183,6 +206,7 @@ namespace ProjetDotNet
             this.checkBox_nuc.TabIndex = 12;
             this.checkBox_nuc.Text = "Nucleaire";
             this.checkBox_nuc.UseVisualStyleBackColor = true;
+            this.checkBox_nuc.Click += new System.EventHandler(this.checkboxChange);
             // 
             // Graph
             // 
