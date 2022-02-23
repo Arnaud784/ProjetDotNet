@@ -387,6 +387,7 @@ namespace ProjetDotNet
             myPane.XAxis.Title.Text = "Temps (par intervalle de 30 min)";
             myPane.YAxis.Title.Text = "Production en MW";
             myPane.XAxis.Scale.Max = nucleaire.Length-1;
+            myPane.YAxis.Scale.Min = 0;
             if (date == null)
             {
                 myPane.XAxis.Scale.Min = period;
