@@ -22,6 +22,16 @@ namespace ProjetDotNet
         private double[] charbon;
         private double[] bioenergies;
         private double[] fioul;
+        private double mNucleaire;
+        private double mHydraulique;
+        private double mEolien;
+        private double mGaz;
+        private double mSolaire;
+        private double mCharbon;
+        private double mBioenergies;
+        private double mFioul;
+        private double mTotal;
+
         private int period = 300;
         private Random rand = new Random(0);
         /*
@@ -87,10 +97,6 @@ namespace ProjetDotNet
             double[] ys1 = new double[listA.Count];
             for (int i = 0; i < listA.Count; i++)
             {
-                /*xs[i] = Double.Parse(listA[i][0]);
-                xsStr[i] = listA[i][2];
-                ys1[i] = Double.Parse(listA[i][4]);*/
-
                 nucleaire[i] = Double.Parse(listA[i][10]);
                 hydraulique[i] = Double.Parse(listA[i][13]);
                 eolien[i] = Double.Parse(listA[i][11]);
@@ -100,12 +106,28 @@ namespace ProjetDotNet
                 bioenergies[i] = Double.Parse(listA[i][15]);
                 fioul[i] = Double.Parse(listA[i][7]);
             }
-            
+            mNucleaire = 0;
+            mHydraulique = 0;
+            mEolien = 0;
+            mGaz = 0;
+            mSolaire = 0;
+            mCharbon = 0;
+            mBioenergies = 0;
+            mFioul = 0;
             for (int i = listA.Count-1; i >= 0; i--)
             {
+                mNucleaire += nucleaire[i];
+                mHydraulique += hydraulique[i];
+                mEolien += eolien[i];
+                mGaz += gaz[i];
+                mSolaire += solaire[i];
+                mCharbon += charbon[i];
+                mBioenergies += bioenergies[i];
+                mFioul += fioul[i];
+
                 if (i >= period)
                 {
-                    for(int j = 1; j < period; j++)
+                    for (int j = 1; j < period; j++)
                     {
                         nucleaire[i] += nucleaire[i - j];
                         hydraulique[i] += hydraulique[i - j];
@@ -115,7 +137,7 @@ namespace ProjetDotNet
                         charbon[i] += charbon[i - j];
                         bioenergies[i] += bioenergies[i - j];
                         fioul[i] += fioul[i - j];
-                    }
+    }
                     nucleaire[i] = nucleaire[i] / period;
                     hydraulique[i] = hydraulique[i] / period;
                     eolien[i] = eolien[i] / period;
@@ -124,8 +146,27 @@ namespace ProjetDotNet
                     charbon[i] = charbon[i] / period;
                     bioenergies[i] = bioenergies[i] / period;
                     fioul[i] = fioul[i] / period;
+                } else
+                {
+                    nucleaire[i] = nucleaire[period];
+                    hydraulique[i] = hydraulique[period];
+                    eolien[i] = eolien[period];
+                    gaz[i] = gaz[period];
+                    solaire[i] = solaire[period];
+                    charbon[i] = charbon[period];
+                    bioenergies[i] = bioenergies[period];
+                    fioul[i] = fioul[period];
                 }
             }
+            mNucleaire /= listA.Count;
+            mHydraulique /= listA.Count;
+            mEolien /= listA.Count;
+            mGaz /= listA.Count;
+            mSolaire /= listA.Count;
+            mCharbon /= listA.Count;
+            mBioenergies /= listA.Count;
+            mFioul /= listA.Count;
+            mTotal = mNucleaire + mHydraulique + mEolien + mGaz + mSolaire + mCharbon + mBioenergies + mFioul;
 
             //int pointCount = listA.Count;
 
@@ -161,14 +202,14 @@ namespace ProjetDotNet
             //string[] labels = { "Fioul", "Charbon", "Gaz", "Nucléaire", "Eolien", "Solaire", "Hydraulique", "Bioénergies" };
             string[] labels = { "" };
             // double[] a = { 1, 2, 8, 61, 10, 4, 12, 2 };
-            double[] y = { 61 };
-            double[] y2 = { 12 };
-            double[] y3 = { 10 };
-            double[] y4 = { 8 };
-            double[] y5 = { 4 };
-            double[] y6 = { 2 };
-            double[] y7 = { 2 };
-            double[] y8 = { 1 };
+            double[] y = { (100 * mNucleaire) / mTotal };
+            double[] y2 = { (100 * mHydraulique) / mTotal };
+            double[] y3 = { (100 * mEolien) / mTotal };
+            double[] y4 = { (100 * mGaz) / mTotal };
+            double[] y5 = { (100 * mSolaire) / mTotal };
+            double[] y6 = { (100 * mCharbon) / mTotal };
+            double[] y7 = { (100 * mBioenergies) / mTotal };
+            double[] y8 = { (100 * mFioul) / mTotal };
             //double[] x = { 0, 900 };
             //double[] y4 = { 90, 90 };
 
