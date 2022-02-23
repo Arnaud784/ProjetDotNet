@@ -507,5 +507,31 @@ namespace ProjetDotNet
             zedGraphControl3.Refresh();
             zedGraphControl1.Refresh();
         }
+
+        private void checkBox_all_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_all.Checked)
+            {
+                checkBox_bio.Checked = true;
+                checkBox_charbon.Checked = true;
+                checkBox_eol.Checked = true;
+                checkBox_fioul.Checked = true;  
+                checkBox_gaz.Checked = true;
+                checkBox_hydra.Checked = true;
+                checkBox_nuc.Checked = true;
+                checkBox_sol.Checked = true;
+            }
+            else
+            {
+                checkBox_bio.Checked = false;
+                checkBox_charbon.Checked = false;
+                checkBox_eol.Checked = false;
+                checkBox_fioul.Checked = false;
+                checkBox_gaz.Checked = false;
+                checkBox_hydra.Checked = false;
+                checkBox_nuc.Checked = false;
+                checkBox_sol.Checked = false;
+            }
+        }
     }
 }
