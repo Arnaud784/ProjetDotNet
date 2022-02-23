@@ -221,7 +221,7 @@ namespace ProjetDotNet
 
             // Generate a red bar with "Curve 1" in the legend
             BarItem myBar = myPane.AddBar("Nucléaire", null, y, Color.Yellow);
-            BarItem myBar2 = myPane.AddBar("Hydraulique", null, y2, Color.Blue);
+            BarItem myBar2 = myPane.AddBar("Hydraulique", null, y2, Color.Turquoise);
             BarItem myBar3 = myPane.AddBar("Eolien", null, y3, Color.GreenYellow);
             BarItem myBar4 = myPane.AddBar("Gaz", null, y4, Color.Red);
             BarItem myBar5 = myPane.AddBar("Solaire", null, y5, Color.Orange);
@@ -284,7 +284,7 @@ namespace ProjetDotNet
 
             // Add a background gradient fill to the axis frame
             myPane.Chart.Fill = new Fill(Color.White,
-                Color.FromArgb(255, 255, 210), -45F);
+                Color.FromArgb(214, 246, 232), -45F);
 
             // Fill the Axis and Pane backgrounds
             //myPane.Chart.Fill = new Fill(Color.White, Color.FromArgb(255, 255, 166), 90F);
@@ -372,7 +372,7 @@ namespace ProjetDotNet
             // Generate a blue curve with circle
             // symbols, and "Piper" in the legend
             LineItem myCurve2 = myPane.AddCurve("Hydraulique",
-                  list2, Color.Blue, SymbolType.Circle);
+                  list2, Color.Turquoise, SymbolType.Circle);
             LineItem myCurve3 = myPane.AddCurve("Eolien",
                   list3, Color.GreenYellow, SymbolType.Circle);
             LineItem myCurve4 = myPane.AddCurve("Gaz",
@@ -414,7 +414,7 @@ namespace ProjetDotNet
 
             // Fill the area under the curves
             myCurve.Line.Fill = new Fill(Color.White, Color.Yellow, 45F);
-            myCurve2.Line.Fill = new Fill(Color.White, Color.Blue, 45F);
+            myCurve2.Line.Fill = new Fill(Color.White, Color.Turquoise, 45F);
             myCurve3.Line.Fill = new Fill(Color.White, Color.GreenYellow, 45F);
             myCurve4.Line.Fill = new Fill(Color.White, Color.Red, 45F);
             myCurve5.Line.Fill = new Fill(Color.White, Color.Orange, 45F);
@@ -472,7 +472,7 @@ namespace ProjetDotNet
 
             // Add a background gradient fill to the axis frame
             myPane.Chart.Fill = new Fill(Color.White,
-                Color.FromArgb(255, 255, 210), -45F);
+                Color.FromArgb(214, 246, 232), -45F);
 
             // Add a caption and an arrow
             /*TextObj myText = new TextObj("Interesting\nPoint", 230F, 70F);
