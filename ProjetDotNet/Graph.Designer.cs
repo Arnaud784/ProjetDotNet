@@ -42,6 +42,8 @@ namespace ProjetDotNet
             this.checkBox_eol = new System.Windows.Forms.CheckBox();
             this.checkBox_hydra = new System.Windows.Forms.CheckBox();
             this.checkBox_nuc = new System.Windows.Forms.CheckBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // zedGraphControl1
@@ -208,12 +210,35 @@ namespace ProjetDotNet
             this.checkBox_nuc.UseVisualStyleBackColor = true;
             this.checkBox_nuc.Click += new System.EventHandler(this.checkboxChange);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(467, 776);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(263, 22);
+            this.dateTimePicker1.TabIndex = 20;
+            this.dateTimePicker1.Value = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(770, 768);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 42);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Annuel";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Graph
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(1682, 836);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.checkBox_fioul);
             this.Controls.Add(this.checkBox_bio);
             this.Controls.Add(this.checkBox_sol);
@@ -248,6 +273,8 @@ namespace ProjetDotNet
         private System.Windows.Forms.CheckBox checkBox_eol;
         private System.Windows.Forms.CheckBox checkBox_hydra;
         private System.Windows.Forms.CheckBox checkBox_nuc;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

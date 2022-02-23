@@ -31,6 +31,8 @@ namespace ProjetDotNet
         private double mBioenergies;
         private double mFioul;
         private double mTotal;
+        private string date = null;
+        List<string[]> listA;
 
         private int period = 300;
         private Random rand = new Random(0);
@@ -81,7 +83,7 @@ namespace ProjetDotNet
             /*plotBar();
             plotScatter();
             plotLines();*/
-            List<string[]> listA = readCSV("bdd.csv");
+            listA = readCSV("bdd.csv");
 
             prepareDatas(listA);
 
@@ -93,16 +95,18 @@ namespace ProjetDotNet
 
         private void prepareDatas(List<string[]> listA)
         {
-            nucleaire = new double[listA.Count];
-            hydraulique = new double[listA.Count];
-            eolien = new double[listA.Count];
-            gaz = new double[listA.Count];
-            solaire = new double[listA.Count];
-            charbon = new double[listA.Count];
-            bioenergies = new double[listA.Count];
-            fioul = new double[listA.Count];
+            int listeSize = listA.Count;
 
-            for (int i = 0; i < listA.Count; i++)
+            nucleaire = new double[listeSize];
+            hydraulique = new double[listeSize];
+            eolien = new double[listeSize];
+            gaz = new double[listeSize];
+            solaire = new double[listeSize];
+            charbon = new double[listeSize];
+            bioenergies = new double[listeSize];
+            fioul = new double[listeSize];
+
+            for (int i = 0; i < listeSize; i++)
             {
                 nucleaire[i] = Double.Parse(listA[i][10]);
                 hydraulique[i] = Double.Parse(listA[i][13]);
@@ -121,7 +125,7 @@ namespace ProjetDotNet
             mCharbon = 0;
             mBioenergies = 0;
             mFioul = 0;
-            for (int i = listA.Count - 1; i >= 0; i--)
+            for (int i = listeSize - 1; i >= 0; i--)
             {
                 mNucleaire += nucleaire[i];
                 mHydraulique += hydraulique[i];
@@ -166,14 +170,81 @@ namespace ProjetDotNet
                     fioul[i] = fioul[period];
                 }
             }
-            mNucleaire /= listA.Count;
-            mHydraulique /= listA.Count;
-            mEolien /= listA.Count;
-            mGaz /= listA.Count;
-            mSolaire /= listA.Count;
-            mCharbon /= listA.Count;
-            mBioenergies /= listA.Count;
-            mFioul /= listA.Count;
+            mNucleaire /= listeSize;
+            mHydraulique /= listeSize;
+            mEolien /= listeSize;
+            mGaz /= listeSize;
+            mSolaire /= listeSize;
+            mCharbon /= listeSize;
+            mBioenergies /= listeSize;
+            mFioul /= listeSize;
+            mTotal = mNucleaire + mHydraulique + mEolien + mGaz + mSolaire + mCharbon + mBioenergies + mFioul;
+        }
+
+        private void prepareDayDatas(List<string[]> listA)
+        {
+            int daySize = 0;
+            foreach (string[] val in listA)
+            {
+                if (val[2] == date)
+                {
+                    daySize++;
+                }
+            }
+            int listeSize = listA.Count;
+
+            nucleaire = new double[daySize];
+            hydraulique = new double[daySize];
+            eolien = new double[daySize];
+            gaz = new double[daySize];
+            solaire = new double[daySize];
+            charbon = new double[daySize];
+            bioenergies = new double[daySize];
+            fioul = new double[daySize];
+
+            int j = 0;
+            for (int i = 0; i < listeSize; i++)
+            {
+                if(listA[i][2] == date)
+                {
+                    nucleaire[j] = Double.Parse(listA[i][10]);
+                    hydraulique[j] = Double.Parse(listA[i][13]);
+                    eolien[j] = Double.Parse(listA[i][11]);
+                    gaz[j] = Double.Parse(listA[i][9]);
+                    solaire[j] = Double.Parse(listA[i][12]);
+                    charbon[j] = Double.Parse(listA[i][8]);
+                    bioenergies[j] = Double.Parse(listA[i][15]);
+                    fioul[j] = Double.Parse(listA[i][7]);
+                    j++;
+                }
+            }
+            mNucleaire = 0;
+            mHydraulique = 0;
+            mEolien = 0;
+            mGaz = 0;
+            mSolaire = 0;
+            mCharbon = 0;
+            mBioenergies = 0;
+            mFioul = 0;
+            for (int i = daySize - 1; i >= 0; i--)
+            {
+                mNucleaire += nucleaire[i];
+                mHydraulique += hydraulique[i];
+                mEolien += eolien[i];
+                mGaz += gaz[i];
+                mSolaire += solaire[i];
+                mCharbon += charbon[i];
+                mBioenergies += bioenergies[i];
+                mFioul += fioul[i];
+            }
+            mNucleaire /= daySize;
+            mHydraulique /= daySize;
+            mEolien /= daySize;
+            mGaz /= daySize;
+            mSolaire /= daySize;
+            mCharbon /= daySize;
+            mBioenergies /= daySize;
+            mFioul /= daySize;
             mTotal = mNucleaire + mHydraulique + mEolien + mGaz + mSolaire + mCharbon + mBioenergies + mFioul;
         }
 
@@ -183,7 +254,11 @@ namespace ProjetDotNet
             GraphPane myPane = zgc.GraphPane;
 
             // Set the Titles
-            myPane.Title.Text = "La production d'électricité en France par filière en 2021";
+            myPane.Title.Text = "La production d'électricité en France par filière en 2020";
+            if (date != null)
+            {
+                myPane.Title.Text = "La production d'électricité en France le " + date;
+            }
             myPane.XAxis.Title.Text = "Filières";
             myPane.YAxis.Title.Text = "Production en %";
 
@@ -301,11 +376,21 @@ namespace ProjetDotNet
             GraphPane myPane = zgc.GraphPane;
 
             // Set the Titles
-            myPane.Title.Text = "La production d'électricité en France par filière en 2021";
-            myPane.XAxis.Title.Text = "Temps";
+            myPane.Title.Text = "La production d'électricité en France par filière en 2020";
+            if(date != null)
+            {
+                myPane.Title.Text = "La production d'électricité en France le "+date;
+            }
+            myPane.XAxis.Title.Text = "Temps (par intervalle de 30 min)";
             myPane.YAxis.Title.Text = "Production en MW";
-            myPane.XAxis.Scale.Max = nucleaire.Length;
-            myPane.XAxis.Scale.Min = period;
+            myPane.XAxis.Scale.Max = nucleaire.Length-1;
+            if (date == null)
+            {
+                myPane.XAxis.Scale.Min = period;
+            } else
+            {
+                myPane.XAxis.Scale.Min = 0;
+            }
 
             // Make up some data arrays based on the Sine function
             double x;
@@ -320,8 +405,6 @@ namespace ProjetDotNet
             for (int i = 0; i < nucleaire.Length; i++)
             {
                 x = (double)i;
-                //y1 = 1.5 + Math.Sin((double)i * 0.2);
-                //y2 = 3.0 * (1.5 + Math.Sin((double)i * 0.2));
                 double somme = 0;
                 if (checkBox_nuc.Checked)
                 {
@@ -489,7 +572,7 @@ namespace ProjetDotNet
             this.Close();
         }
 
-        private void checkboxChange(object sender, EventArgs e)
+        private void refreshGraph()
         {
             zedGraphControl3.GraphPane.CurveList.Clear();
             zedGraphControl3.GraphPane.GraphObjList.Clear();
@@ -499,6 +582,25 @@ namespace ProjetDotNet
             CreateGraph1(zedGraphControl1);
             zedGraphControl3.Refresh();
             zedGraphControl1.Refresh();
+        }
+
+        private void checkboxChange(object sender, EventArgs e)
+        {
+            refreshGraph();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            date = null;
+            prepareDatas(listA);
+            refreshGraph();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            date = dateTimePicker1.Value.GetDateTimeFormats()[4];
+            prepareDayDatas(listA);
+            refreshGraph();
         }
     }
 }
