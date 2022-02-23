@@ -92,7 +92,7 @@ namespace ProjetDotNet
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Sylfaen", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(32, 711);
+            this.button1.Location = new System.Drawing.Point(12, 770);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(57, 54);
             this.button1.TabIndex = 3;
@@ -101,6 +101,7 @@ namespace ProjetDotNet
             // 
             // checkBox_fioul
             // 
+            this.checkBox_fioul.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_fioul.AutoSize = true;
             this.checkBox_fioul.Checked = true;
             this.checkBox_fioul.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -115,6 +116,7 @@ namespace ProjetDotNet
             // 
             // checkBox_bio
             // 
+            this.checkBox_bio.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_bio.AutoSize = true;
             this.checkBox_bio.Checked = true;
             this.checkBox_bio.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -129,6 +131,7 @@ namespace ProjetDotNet
             // 
             // checkBox_sol
             // 
+            this.checkBox_sol.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_sol.AutoSize = true;
             this.checkBox_sol.Checked = true;
             this.checkBox_sol.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -143,6 +146,7 @@ namespace ProjetDotNet
             // 
             // checkBox_charbon
             // 
+            this.checkBox_charbon.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_charbon.AutoSize = true;
             this.checkBox_charbon.Checked = true;
             this.checkBox_charbon.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -157,6 +161,7 @@ namespace ProjetDotNet
             // 
             // checkBox_gaz
             // 
+            this.checkBox_gaz.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_gaz.AutoSize = true;
             this.checkBox_gaz.Checked = true;
             this.checkBox_gaz.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -171,6 +176,7 @@ namespace ProjetDotNet
             // 
             // checkBox_eol
             // 
+            this.checkBox_eol.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_eol.AutoSize = true;
             this.checkBox_eol.Checked = true;
             this.checkBox_eol.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -185,6 +191,7 @@ namespace ProjetDotNet
             // 
             // checkBox_hydra
             // 
+            this.checkBox_hydra.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_hydra.AutoSize = true;
             this.checkBox_hydra.Checked = true;
             this.checkBox_hydra.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -199,6 +206,7 @@ namespace ProjetDotNet
             // 
             // checkBox_nuc
             // 
+            this.checkBox_nuc.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_nuc.AutoSize = true;
             this.checkBox_nuc.Checked = true;
             this.checkBox_nuc.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -211,10 +219,10 @@ namespace ProjetDotNet
             this.checkBox_nuc.UseVisualStyleBackColor = true;
             this.checkBox_nuc.Click += new System.EventHandler(this.checkboxChange);
             // 
-
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(467, 776);
+            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(1118, 768);
             this.dateTimePicker1.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -225,16 +233,18 @@ namespace ProjetDotNet
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(770, 768);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(1421, 760);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(106, 42);
             this.button2.TabIndex = 21;
             this.button2.Text = "Annuel";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-			
+            // 
             // checkBox_all
             // 
+            this.checkBox_all.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_all.AutoSize = true;
             this.checkBox_all.Checked = true;
             this.checkBox_all.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -254,12 +264,9 @@ namespace ProjetDotNet
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(1682, 836);
-
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker1);
-
             this.Controls.Add(this.checkBox_all);
-
             this.Controls.Add(this.checkBox_fioul);
             this.Controls.Add(this.checkBox_bio);
             this.Controls.Add(this.checkBox_sol);
