@@ -234,10 +234,10 @@ namespace ProjetDotNet
             GraphPane myPane = zgc.GraphPane;
 
             // Set the Titles
-            myPane.Title.Text = "La production d'électricité en France par filière en 2020";
+            myPane.Title.Text = "La production moyenne d'électricité en France par filière en 2020";
             if (date != null)
             {
-                myPane.Title.Text = "La production d'électricité en France le " + date;
+                myPane.Title.Text = "La production moyenne d'électricité par filière en France le " + date;
             }
             myPane.XAxis.Title.Text = "Filières";
             myPane.YAxis.Title.Text = "Production en %";
