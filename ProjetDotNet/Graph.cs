@@ -285,6 +285,9 @@ namespace ProjetDotNet
             // Add a background gradient fill to the axis frame
             myPane.Chart.Fill = new Fill(Color.White,
                 Color.FromArgb(214, 246, 232), -45F);
+            myPane.Border.IsVisible = false;
+            myPane.Chart.Border.IsVisible = false;
+            myPane.Fill = new Fill(Color.MediumAquamarine);
 
             // Fill the Axis and Pane backgrounds
             //myPane.Chart.Fill = new Fill(Color.White, Color.FromArgb(255, 255, 166), 90F);
@@ -473,6 +476,10 @@ namespace ProjetDotNet
             // Add a background gradient fill to the axis frame
             myPane.Chart.Fill = new Fill(Color.White,
                 Color.FromArgb(214, 246, 232), -45F);
+            myPane.Border.IsVisible = false;
+            myPane.Chart.Border.IsVisible = false;
+            myPane.Fill = new Fill(Color.MediumAquamarine);
+
 
             // Add a caption and an arrow
             /*TextObj myText = new TextObj("Interesting\nPoint", 230F, 70F);
